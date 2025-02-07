@@ -1,0 +1,30 @@
+CREATE TABLE kendaraan
+(
+Plat_no varchar (30) PRIMARY KEY,
+id_tempat int,
+waktu_masuk date,
+type_kendaraan varchar (30),
+nama_pemilik varchar (30)
+)
+
+CREATE TABLE tempat_parkir
+(
+id_tempat int PRIMARY KEY,
+nama_tempat varchar (30),
+harga int
+)
+
+INSERT INTO tempat_parkir VALUES
+( 2112, "citylink", 10.000 ),
+( 2113, "mikomall", 5.000 ),
+( 2114, "paris van java", 9.000 ),
+( 2115, "ciwalk", 8.000 ),
+( 2116, "mcd", 4.000 ),
+
+INSERT INTO kendaraan VALUES 
+
+("D 1387 ABC",2112,"13.00","aerok","ata"),
+("D 8701 CCK",2113,"13.30","xride","hapip"),
+("D 1001 WOW",2114,"15.00","mio kuning","jaki"),
+("D 1996 ZZZ",2115,"20.00","nmax","peri"),
+("D 7997 AHH",2116,"20.01","beat","alfin")
